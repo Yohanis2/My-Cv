@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yohanis Feleke Debebe - Curriculum Vitae</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 10px;
+      color: #333333;
+    }
+    .cv-container {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .header-section {
+      background-color: #f7fafc;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    @media (min-width: 768px) {
+      .header-section {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+        padding: 30px 24px;
+      }
+    }
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #142a4d;
+      box-shadow: 0 0 10px rgba(20, 42, 77, 0.4);
+    }
+    @media (min-width: 768px) {
+      .profile-image {
+        margin-right: 24px;
+        margin-bottom: 0;
+      }
+    }
+    .name-title-container h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 2px;
+      line-height: 1.1;
+    }
+    .name-title-container p {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #4a4a4a;
+      border-bottom: 2px solid #a0a0a0;
+      display: inline-block;
+      padding-bottom: 2px;
+      margin-top: 5px;
+    }
+    .content-area {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (min-width: 768px) {
+      .content-area {
+        flex-direction: row;
+      }
+    }
+    .left-panel {
+      background-color: #142a4d;
+      color: #ffffff;
+      padding: 24px;
+      flex: 1;
+      min-width: 250px;
+    }
+    .right-panel {
+      background-color: #ffffff;
+      color: #333333;
+      padding: 24px;
+      flex: 2;
+    }
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #142a4d;
+      margin-bottom: 15px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #b0c4de;
+      width: 100%;
+      text-align: left;
+    }
+    .left-panel .section-title {
+      color: #ffffff;
+      border-bottom-color: #ffffff;
+    }
+    .list-item {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+    .list-item i {
+      margin-right: 8px;
+      color: #b0c4de;
+      font-size: 1rem;
+    }
+    .list-item a {
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    .list-item a:hover {
+      text-decoration: underline;
+    }
+    .bullet-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .bullet-list li::before {
+      content: '•';
+      color: #142a4d;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+    .left-panel .bullet-list li::before {
+      color: #b0c4de;
+    }
+    .experience-item, .project-item {
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .experience-item:last-child, .project-item:last-child {
+      border-bottom: none;
+    }
+    .job-title, .project-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 3px;
+      color: #1a1a1a;
+    }
+    .job-location-date {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #666666;
+      margin-bottom: 8px;
+    }
+    .skill-category {
+      font-weight: 600;
+      margin-top: 12px;
+      margin-bottom: 6px;
+    }
+    .reference-item {
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+    .reference-contact {
+      font-size: 0.85rem;
+      color: #666666;
+    }
+    @media print {
+      .print-btn { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+
+    <!-- Header -->
+    <div class="header-section">
+      <img src="jo1.png" alt="Profile photo of Yohanis Feleke Debebe" class="profile-image"/>
+      <div class="name-title-container">
+        <h1>YOHANIS FELEKE DEBEBE</h1>
+        <p>COMPUTER SCIENCE</p>
+      </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="content-area">
+      <!-- Left Panel -->
+      <div class="left-panel">
+        <div class="section-title">CONTACT</div>
+        <div class="list-item"><a href="tel:+251910469264"><i class="fas fa-phone-alt"></i> +251910469264</a></div>
+        <div class="list-item"><a href="mailto:Yohanisf92@gmail.com"><i class="fas fa-envelope"></i> Yohanisf92@gmail.com</a></div>
+        <div class="list-item"><a href="https://www.linkedin.com/in/yohanisfeleke" target="_blank"><i class="fab fa-linkedin"></i> in/yohanisf</a></div>
+        <div class="list-item"><a href="https://github.com/yohanisfeleke" target="_blank"><i class="fab fa-github"></i> Yohanis2</a></div>
+        <div class="list-item"><i class="fas fa-map-marker-alt"></i> Adama, Ethiopia</div>
+        <div class="list-item"><i class="fas fa-id-card"></i> FIN: 4734 0185 6298</div>
+
+        <div class="section-title mt-8">EDUCATION</div>
+        <div class="list-item">
+          <strong>B.Sc. in Computer Science</strong><br/>
+          <span class="text-sm text-gray-300">CGPA: 3.81 | Exit Exam Passed: 84%</span><br/>
+          <span class="text-sm text-gray-300">Bonga University (2021 - 2025)</span>
+        </div>
+        <div class="list-item"><strong>Preparatory:</strong> Abomsa Preparatory School (2019–2021)</div>
+        <div class="list-item"><strong>High School:</strong> Abomsa High School (2017–2019)</div>
+        <div class="list-item"><strong>Elementary:</strong> Abomsa Elementary School (2010–2017)</div>
+
+        <div class="section-title mt-8">SKILLS</div>
+        <div class="list-item"><div class="skill-category">Programming:</div> Python, Java, JavaScript, PHP, C++</div>
+        <div class="list-item"><div class="skill-category">Web Tech:</div> HTML, CSS, Django, Bootstrap</div>
+        <div class="list-item"><div class="skill-category">Networking:</div> Config, Security, Admin</div>
+        <div class="list-item"><div class="skill-category">Dev Skills:</div> Design, Implementation</div>
+        <div class="list-item"><div class="skill-category">Other:</div> Graphic Design, Video Editing</div>
+
+        <div class="section-title mt-8">PERSONAL DETAILS</div>
+        <div class="list-item"><strong>Birthday:</strong> 15/08/2001</div>
+        <div class="list-item"><strong>Status:</strong> Single</div>
+        <div class="list-item"><strong>Nationality:</strong> Ethiopian</div>
+        <div class="list-item"><strong>Gender:</strong> Male</div>
+
+        <div class="section-title mt-8">LANGUAGES</div>
+        <ul class="bullet-list">
+          <li>Amharic (Fluent)</li>
+          <li>Afaan Oromoo (Basics)</li>
+          <li>English (Basics)</li>
+        </ul>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="right-panel">
+        <div class="section-title">PROFILE</div>
+        <p class="mb-8 text-sm leading-relaxed" style="font-size: medium;">
+          Highly motivated and results-oriented Computer Science graduate from Bonga University, boasting a CGPA of 3.81 and an impressive exit exam score of 84%. Equipped with strong technical skills in software development, problem solving, and  web development. Dependable, adaptable, and detail-focused with a commitment to quality and continuous learning.
+        </p>
+
+        <div class="section-title mt-8">PROFESSIONAL EXPERIENCE</div>
+        <div class="experience-item">
+          <div class="job-title">Software Developer</div>
+          <div class="job-location-date">Bonga, Ethiopia</div>
+          <ul class="bullet-list">
+            <li>Designed and implemented user-friendly software solutions.</li>
+            <li>Led a team of 5 developers through full project lifecycle.</li>
+            <li>Maintained quality assurance and timely delivery.</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <div class="job-title">Internship</div>
+          <div class="job-location-date">ASTU, Adama, Ethiopia | Summer 2024</div>
+          <ul class="bullet-list">
+            <li>Contributed to development of a performance evaluation system.</li>
+            <li>Applied Agile methods to improve team delivery.</li>
+          </ul>
+        </div>
+
+        <div class="section-title mt-8">PROJECTS</div>
+        <div class="project-item">
+          <div class="project-title">Portfolio Website</div>
+          <ul class="bullet-list">
+            <li>Showcased personal skills and projects using Python,Django, HTML/CSS/JS.</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <div class="project-title">Web-Based Inventory System for Bonga University</div>
+          <ul class="bullet-list">
+            <li>Web app to manage university assets efficiently and projects using PHP & MYSQL.</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <div class="project-title">Performance Evaluation System</div>
+          <ul class="bullet-list">
+            <li>Built as part of internship using Python,Django HTML/CSS/JS.</li>
+          </ul>
+        </div>
+
+        <div class="section-title mt-8">REFERENCES</div>
+        <div class="reference-item">
+          <p><strong>1. Mr. Amsalu T.</strong> (Web Developer, Advisor)</p>
+          <p class="reference-contact">Computer Science, Bonga University</p>
+          <p class="reference-contact">Phone: +251-923-453-200</p>
+          <p class="reference-contact">Email: amsalutesema@gmail.com</p>
+        </div>
+        <div class="reference-item">
+          <p><strong>2. Mr. Desta Z.</strong> (Research Examiner)</p>
+          <p class="reference-contact">Software Engineering and ICT, ASTU</p>
+          <p class="reference-contact">Phone: +251-967-724-772</p>
+          <p class="reference-contact">Email: destaze@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
